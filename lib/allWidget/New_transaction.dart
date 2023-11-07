@@ -53,21 +53,19 @@ class _NewTransactionState extends State<NewTransaction> {
     }
     final enteredTitle = titleController.text;
     final enteredAmount =
-        double.parse(amountController.text); //change string to double data type
+        double.parse(amountController.text); 
 
     if (enteredTitle.isEmpty || enteredAmount < 0 || _selectedDate == null) {
       return;
     }
     widget.addtxe(
-      //widget property , this refactoring step automatically added it. we can use widget.addtxe() even in technically in a different class. only avalible in state class,fix issuse of bottom sheet clearing our input
-      //widget give access to the class itself, to its properties and so on
+      
       enteredTitle,
       enteredAmount,
       _selectedDate,
     );
     Navigator.of(context)
-        .pop(); //many stuff to do, here use pop method to close topmost screen (after enter input not manually close keypade automatically can do by this method)
-    //contex give access to the context related to ypur widget
+        .pop(); 
   }
 
   void _presentDatePicker() {
@@ -142,7 +140,6 @@ class _NewTransactionState extends State<NewTransaction> {
                     //         ),
                     //         onPressed: _presentDatePicker),
 
-                    //we just create a AdaptiveFlatButton custom widget so that our widget tree don,t look messy
                     AdaptiveFlatButton('Choose Date', _presentDatePicker),
                   ],
                 ),
@@ -152,19 +149,8 @@ class _NewTransactionState extends State<NewTransaction> {
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.purple,
                     foregroundColor: Colors.white),
-
-                // color: Colors.purple,
-                // textColor: Colors.white,
-
-                //onPressed: () {
-                // print(titleController.text);
-                // print(amountController.text);
-                // addtxe(
-                //   titleController.text,
-                //   double.parse(amountController.text),
-                // );
                 onPressed: _submitData,
-                //},
+
               ),
             ],
           ),
