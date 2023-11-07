@@ -14,24 +14,19 @@ class ChartBar extends StatelessWidget {
         return Column(
           children: <Widget>[
             Container(
-              // height:
-              //     20, //we fix height of amount for always same.so that big amount dont impact on bar and amount , day height
               height:
-                  constraints.maxHeight * 0.15, //dynamically calculating height
+                  constraints.maxHeight * 0.15, 
               child: FittedBox(
                   child: Text('\$${spendingAmount.toStringAsFixed(0)}')),
-            ), // FittedBox force to be in the available space even text to shrinks
+            ),
             SizedBox(
-              // height: 4,
               height: constraints.maxHeight * 0.05,
             ),
             Container(
-              //height: 60,
               height:
-                  constraints.maxHeight * 0.6, //dynamically calculating height
+                  constraints.maxHeight * 0.6, 
               width: 10,
               child: Stack(
-                //use for element top to eachother (overlapping)
                 children: <Widget>[
                   Container(
                     decoration: BoxDecoration(
@@ -41,8 +36,7 @@ class ChartBar extends StatelessWidget {
                     ),
                   ),
                   FractionallySizedBox(
-                    //create a box that sized of fraction of another value
-                    heightFactor: spendingPctofTotal, //height of box
+                    heightFactor: spendingPctofTotal, 
                     child: Container(
                       decoration: BoxDecoration(
                         color: Theme.of(context).primaryColor,
@@ -54,7 +48,6 @@ class ChartBar extends StatelessWidget {
               ),
             ),
             SizedBox(
-              // height: 4,
               height: constraints.maxHeight * 0.05,
             ),
             Container(
