@@ -44,7 +44,7 @@ class TransactionItem extends StatelessWidget {
                 icon: Icon(Icons.delete),
                 color: Theme.of(context).errorColor,
                 onPressed: () => deletetx(transaction
-                    .id), //passing transaction id for delete that transaction
+                    .id), 
               ),
       ),
     );
