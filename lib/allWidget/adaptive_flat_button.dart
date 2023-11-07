@@ -19,10 +19,8 @@ class AdaptiveFlatButton extends StatelessWidget {
           )
         : TextButton(
             style: TextButton.styleFrom(
-                //backgroundColor: Colors.purple,
                 foregroundColor:
-                    Theme.of(context).primaryColor), //for text color
-            //textColor: Theme.of(context).primaryColor,
+                    Theme.of(context).primaryColor), ,
             child: Text(
               text,
               style: TextStyle(fontWeight: FontWeight.bold),
