@@ -25,10 +25,10 @@ class Chart extends StatelessWidget {
       }
       return {
         'day': DateFormat.E().format(weekDay).substring(0,
-            1), //substring use to limit day name to single word notation , DateFormet.E().formet(weekday) used for short notaion of day liken (mon,tus...)
+            1), 
         'amount': totalsum
-      }; //DateFormet.E() used for notation of day, inclue in intl package
-    } //reversed use to reverse the day, starting form today to , today is at the end
+      }; 
+    } 
         ).reversed.toList();
   }
 
@@ -41,12 +41,6 @@ class Chart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
         print('build() chart');
-
-    //we are now calculateing weight at main.dart, at calling time then no need to calculate here
-    // return Container(
-    //   //dyanamically assigning height so according to device screen height will change, 0.4 means 40% of screen
-    //   height: MediaQuery.of(context).size.height * 0.4,
-    //  child: 
     return Card(
           elevation: 6,
           margin: EdgeInsets.all(20),
@@ -56,8 +50,6 @@ class Chart extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: groupofTransaction.map((data) {
                 return Flexible(
-                  //by using flexible widget we can manage space for each child bcz by default every child has the same space
-                  //FlexFit.tight force to into its assign width and can't grow , FlexFit.loose
                   fit: FlexFit.tight,
                   child: ChartBar(
                       data['day'].toString(),
@@ -68,7 +60,6 @@ class Chart extends StatelessWidget {
                 );
               }).toList(),
             )
-         // )
           ),
     );
   }
