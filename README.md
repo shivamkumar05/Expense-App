@@ -56,14 +56,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 **Shivam Kumar**
-- Email: [shivamkrmahto25@gmail.com](mailto:shivamkrmahto25@gmail.com)
+- Email: [shivammahto05@gmail.com](mailto:shivammahto05@gmail.com)
 - LinkedIn: [Shivam Kumar Mahto](https://www.linkedin.com/in/shivam-kumar-mahto/)
 - GitHub: [shivamkumar05](https://github.com/shivamkumar05)
 
 
 
-## Contact
-**Shivam Kumar**
-- Email: [shivamkrmahto25@gmail.com](mailto:shivamkrmahto25@gmail.com)
-- LinkedIn: [Shivam Kumar Mahto](https://www.linkedin.com/in/shivam-kumar-mahto/)
-- GitHub: [shivamkumar05](https://github.com/shivamkumar05)
